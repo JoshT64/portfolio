@@ -4,6 +4,7 @@ import Header from "./header";
 // styles
 const pageStyles = {
   color: "#232129",
+  paddingTop: 26,
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
@@ -63,6 +64,10 @@ const docLink = {
   color: "#8954A8",
 };
 
+const imgStyle = {
+  float: "right",
+};
+
 const badgeStyle = {
   color: "#fff",
   backgroundColor: "#088413",
@@ -83,7 +88,7 @@ const badgeStyle = {
 const links = [
   {
     text: "Work Experience",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
+    url: "https://google.com",
     description:
       "I've never worked a job in my life, all i do is watch anime and play degen video games.",
     color: "#E95800",
@@ -94,19 +99,36 @@ const links = [
 const IndexPage = () => {
   return (
     <div>
+      <img
+        style={{ paddingLeft: 69, padding: 0, margin: 0 }}
+        height="128"
+        width="96"
+        src="https://cdn.discordapp.com/attachments/635642752448725003/857695768251727932/CleverAdmirablndfheCowrie-max-1mb.gif"
+        alt=""
+      ></img>
       <main style={pageStyles}>
-        <title>Home Page</title>
+        <title>Josh Portfolio</title>
+        <img
+          style={imgStyle}
+          src="http://alligator.fun/Construction.gif"
+          alt=""
+          width="420"
+          height="420"
+        ></img>
         <Header style={headingStyles} />
         <h1 style={headingStyles}>
           Welcome
           <br />
-          <span style={headingAccentStyles}> to my portfolio. </span>
+          <span style={headingAccentStyles}>
+            {" "}
+            to my portfolio. <br></br>
+          </span>
           <span role="img" aria-label="Party popper emojis">
             🎉🎉🎉
           </span>
         </h1>
         <p style={paragraphStyles}>
-          My favorite <code>ANIME</code> is Beastars!!
+          My favorite <code style={codeStyles}>ANIME</code> is Beastars!!
           <span role="img" aria-label="Sunglasses smiley emoji">
             😎
           </span>
