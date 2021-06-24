@@ -109,6 +109,7 @@ const links = [
 const IndexPage = () => {
   return (
     <div>
+      <title>Josh Portfolio</title>
       <img
         style={imgDim}
         height="128"
@@ -124,7 +125,6 @@ const IndexPage = () => {
         alt=""
       ></img>
       <main style={pageStyles}>
-        <title>Josh Portfolio</title>
         <img
           style={imgStyle}
           src="http://alligator.fun/Construction.gif"
