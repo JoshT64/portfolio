@@ -117,10 +117,10 @@ const IndexPage = () => {
         alt=""
       ></img>
       <img
-        style={{ imgDim, marginLeft: 8 }}
+        style={{ imgDim }}
         height="128"
         width="128"
-        src="https://media.tenor.com/images/eba379234fa67935935f3e690e409620/tenor.gif"
+        src="https://media2.giphy.com/media/KcW0iKgbONHUxzWrIF/giphy.gif?cid=ecf05e4704jsupz046k40vkusv3gmwh7km5wak9r7fxm6iiq&rid=giphy.gif&ct=g"
         alt=""
       ></img>
       <main style={pageStyles}>
