@@ -1,0 +1,8 @@
+html {
+    background-image: url("../images/mooning.png");
+    background-color: aqua;
+    max-height: 100vh;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}

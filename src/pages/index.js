@@ -1,8 +1,12 @@
 import * as React from "react";
 import Header from "./header";
+import bgImage from "../images/mooning.png"
+import layouts from "../components/layouts.css"
 
 // styles
-const pageStyles = {
+
+
+export const pageStyles = {
   color: "#232129",
   paddingTop: 26,
   paddingBottom: 96,
@@ -10,7 +14,7 @@ const pageStyles = {
   paddingRight: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
-const headingStyles = {
+export const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
@@ -28,11 +32,11 @@ const codeStyles = {
   fontSize: "1.25rem",
   borderRadius: 4,
 };
-const listStyles = {
+export const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 };
-const listItemStyles = {
+export const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
   maxWidth: 560,
@@ -46,7 +50,7 @@ const linkStyle = {
   verticalAlign: "5%",
 };
 
-const docLinkStyle = {
+export const docLinkStyle = {
   ...linkStyle,
   listStyleType: "none",
   marginBottom: 24,
@@ -103,6 +107,12 @@ const links = [
       "I've never worked a job in my life, all i do is watch anime and play degen video games.",
     color: "#E95800",
   },
+  {
+    text: "About",
+    url: "/about",
+    description: "More info about me I guess",
+    color: "#E95800"
+  }
 ];
 
 // markup
@@ -121,13 +131,13 @@ const IndexPage = () => {
         style={{ imgDim }}
         height="128"
         width="128"
-        src="https://media2.giphy.com/media/KcW0iKgbONHUxzWrIF/giphy.gif?cid=ecf05e4704jsupz046k40vkusv3gmwh7km5wak9r7fxm6iiq&rid=giphy.gif&ct=g"
+        src="https://i.imgur.com/ffV7Sat.gif"
         alt=""
       ></img>
       <main style={pageStyles}>
         <img
           style={imgStyle}
-          src="http://alligator.fun/Construction.gif"
+          src="https://i.imgur.com/RHy3kb8.gif"
           alt=""
           width="420"
           height="420"
@@ -154,7 +164,7 @@ const IndexPage = () => {
           <li style={docLinkStyle}>
             <a
               style={linkStyle}
-              href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+              href={`${docLink.url}`}
             >
               {docLink.text}
             </a>
@@ -164,7 +174,7 @@ const IndexPage = () => {
               <span>
                 <a
                   style={linkStyle}
-                  href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+                  href={`${link.url}`}
                 >
                   {link.text}
                 </a>
