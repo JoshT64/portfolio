@@ -5,7 +5,9 @@ import Header from "./header";
 const pageStyles = {
   color: "#232129",
   paddingTop: 26,
-  padding: 96,
+  paddingBottom: 96,
+  paddingLeft: 96,
+  paddingRight: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
 const headingStyles = {
@@ -100,7 +102,13 @@ const IndexPage = () => {
   return (
     <div>
       <img
-        style={{ paddingLeft: 69, padding: 0, margin: 0 }}
+        style={{
+          paddingLeft: 69,
+          paddingBottom: 0,
+          paddingRight: 0,
+          paddingTop: 0,
+          margin: 0,
+        }}
         height="128"
         width="96"
         src="https://cdn.discordapp.com/attachments/635642752448725003/857695768251727932/CleverAdmirablndfheCowrie-max-1mb.gif"
