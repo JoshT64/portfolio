@@ -70,6 +70,14 @@ const imgStyle = {
   float: "right",
 };
 
+const imgDim = {
+  paddingLeft: 69,
+  paddingBottom: 0,
+  paddingRight: 0,
+  paddingTop: 0,
+  margin: 0,
+};
+
 const badgeStyle = {
   color: "#fff",
   backgroundColor: "#088413",
@@ -102,16 +110,17 @@ const IndexPage = () => {
   return (
     <div>
       <img
-        style={{
-          paddingLeft: 69,
-          paddingBottom: 0,
-          paddingRight: 0,
-          paddingTop: 0,
-          margin: 0,
-        }}
+        style={imgDim}
         height="128"
         width="96"
         src="https://cdn.discordapp.com/attachments/635642752448725003/857695768251727932/CleverAdmirablndfheCowrie-max-1mb.gif"
+        alt=""
+      ></img>
+      <img
+        style={{ imgDim, marginLeft: 8 }}
+        height="128"
+        width="128"
+        src="https://media.tenor.com/images/eba379234fa67935935f3e690e409620/tenor.gif"
         alt=""
       ></img>
       <main style={pageStyles}>
