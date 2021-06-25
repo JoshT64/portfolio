@@ -1,9 +1,10 @@
 import * as React from "react";
+import Draggable from "react-draggable";
 
 function Header(props) {
   return (
     <div>
-      <h1 style={props.style}>Joshua Toney.</h1>
+    <Draggable><h1 className="my-name"  style={props.style}>Joshua Toney.</h1></Draggable>
       <p></p>
     </div>
   );

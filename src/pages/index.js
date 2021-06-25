@@ -1,12 +1,11 @@
 import * as React from "react";
 import Header from "./header";
-import bgImage from "../images/mooning.png"
 import layouts from "../components/layouts.css"
 
 // styles
 
 
-export const pageStyles = {
+const pageStyles = {
   color: "#232129",
   paddingTop: 26,
   paddingBottom: 96,
@@ -14,7 +13,7 @@ export const pageStyles = {
   paddingRight: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
-export const headingStyles = {
+const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
@@ -32,11 +31,11 @@ const codeStyles = {
   fontSize: "1.25rem",
   borderRadius: 4,
 };
-export const listStyles = {
+const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 };
-export const listItemStyles = {
+const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
   maxWidth: 560,
@@ -44,13 +43,12 @@ export const listItemStyles = {
 };
 
 const linkStyle = {
-  color: "#8954A8",
+  
   fontWeight: "bold",
-  fontSize: 16,
   verticalAlign: "5%",
 };
 
-export const docLinkStyle = {
+const docLinkStyle = {
   ...linkStyle,
   listStyleType: "none",
   marginBottom: 24,
@@ -170,7 +168,7 @@ const IndexPage = () => {
             </a>
           </li>
           {links.map((link) => (
-            <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+            <li key={link.url} style={{ ...listItemStyles}}>
               <span>
                 <a
                   style={linkStyle}

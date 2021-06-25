@@ -2,7 +2,42 @@ html {
     background-image: url("../images/mooning.png");
     background-color: aqua;
     max-height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    color: #e9ff1ea9;
+}
+
+a
+{
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgb(144, 70, 230);
+    font-size: 24px;
+}
+a:hover{
+    font-size: larger;
+    color:#b779ff;
+    /* animation: link 1.2s ease-out infinite; */
+}
+
+/* @keyframes link {
+    0% {
+        transform: scaleX(1, 1);
+    }
+    50% {
+        transform: scale(1.05, 1.05);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+} */
+
+.my-name {
+    cursor: move;
+    
 }
