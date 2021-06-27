@@ -9,7 +9,7 @@
 html {
   z-index: -1;
   /* background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236eea3d' fill-opacity='0.59' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
-  background-image: url("../../public/static/texture.svg");
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA0IDQiPjxwYXRoIGZpbGw9IiMyZjllNGQiIGZpbGwtb3BhY2l0eT0iMC41OSIgZD0iTTEgM2gxdjFIMVYzem0yLTJoMXYxSDNWMXoiPjwvcGF0aD48L3N2Zz4=');
   background-color: rgb(214, 11, 255);
   max-height: 100vh;
   overflow: hidden;
