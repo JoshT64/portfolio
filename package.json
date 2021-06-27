@@ -26,5 +26,11 @@
     "react-dom": "^17.0.1",
     "react-draggable": "^4.4.3",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "gatsby-plugin-postcss": "^4.8.0",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }

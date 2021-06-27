@@ -1,9 +1,8 @@
 import * as React from "react";
 import Header from "./header";
-import layouts from "../components/layouts.css"
+import layouts from "../components/layouts.css";
 
 // styles
-
 
 const pageStyles = {
   color: "#232129",
@@ -22,6 +21,8 @@ const headingAccentStyles = {
   color: "#663399",
 };
 const paragraphStyles = {
+  fontWeight: "500",
+  fontSize: 19,
   marginBottom: 48,
 };
 const codeStyles = {
@@ -43,7 +44,6 @@ const listItemStyles = {
 };
 
 const linkStyle = {
-  
   fontWeight: "bold",
   verticalAlign: "5%",
 };
@@ -103,14 +103,14 @@ const links = [
     url: "https://google.com",
     description:
       "I've never worked a job in my life, all i do is watch anime and play degen video games.",
-    color: "#E95800",
+    color: "#f6e58d",
   },
   {
     text: "About",
     url: "/about",
     description: "More info about me I guess",
-    color: "#E95800"
-  }
+    color: "#fff",
+  },
 ];
 
 // markup
@@ -145,7 +145,6 @@ const IndexPage = () => {
           Welcome
           <br />
           <span style={headingAccentStyles}>
-            {" "}
             to my portfolio. <br></br>
           </span>
           <span role="img" aria-label="Party popper emojis">
@@ -153,27 +152,22 @@ const IndexPage = () => {
           </span>
         </h1>
         <p style={paragraphStyles}>
-          My favorite <code style={codeStyles}>ANIME</code> is Beastars!!
+          Front-end developer <code style={codeStyles}>REACT</code>{" "}
+          connoisseur!!
           <span role="img" aria-label="Sunglasses smiley emoji">
             😎
           </span>
         </p>
         <ul style={listStyles}>
           <li style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${docLink.url}`}
-            >
+            <a style={linkStyle} href={`${docLink.url}`}>
               {docLink.text}
             </a>
           </li>
           {links.map((link) => (
-            <li key={link.url} style={{ ...listItemStyles}}>
+            <li key={link.url} style={{ ...listItemStyles }}>
               <span>
-                <a
-                  style={linkStyle}
-                  href={`${link.url}`}
-                >
+                <a style={linkStyle} href={`${link.url}`}>
                   {link.text}
                 </a>
                 {link.badge && (
@@ -186,10 +180,21 @@ const IndexPage = () => {
             </li>
           ))}
         </ul>
-        <img
-          alt="Gatsby G Logo"
-          src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z"
+          />
+        </svg>
+        <code className="flex flex-column">hint: drag my name.</code>
       </main>
     </div>
   );
