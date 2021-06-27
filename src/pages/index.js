@@ -1,6 +1,7 @@
 import * as React from "react";
 import Header from "./header";
 import layouts from "../components/layouts.css";
+import texture from "../../public/static/texture.svg";
 
 // styles
 
