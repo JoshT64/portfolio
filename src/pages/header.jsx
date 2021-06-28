@@ -12,7 +12,7 @@ function Header(props) {
           return setIsDragged(true);
         }}
       >
-        <h1 className="my-name" style={props.style}>
+        <h1 className="my-name " style={props.style}>
           Joshua Toney.
         </h1>
       </Draggable>

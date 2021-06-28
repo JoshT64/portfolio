@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.backgroundSVG {
-  filter: invert(27%);
-}
-
 html {
   /* background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236eea3d' fill-opacity='0.59' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
   background-image: url("https://svgur.com/i/YaJ.svg");
@@ -14,6 +10,8 @@ html {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  border: 5px dashed red;
+  cursor: url("../images/cursor.svg");
 }
 
 ul {
@@ -23,14 +21,18 @@ ul {
 a {
   text-decoration: none;
   transition: 0.3s;
-  color: #c2ff09;
+  color: #f7ff20;
   font-size: 24px;
 }
 a:hover {
   font-size: larger;
-  color: #b779ff;
+  color: #cbd361;
   /* animation: link 1.2s ease-out infinite; */
 }
+
+/* .frame {
+  background-image: url("../images/gold-frame.png");
+} */
 
 /* @keyframes link {
     0% {

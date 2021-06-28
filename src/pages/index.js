@@ -18,7 +18,8 @@ const headingStyles = {
   maxWidth: 320,
 };
 const headingAccentStyles = {
-  color: "#663399",
+  color: "#f7ff20",
+  zIndex: "2",
 };
 const paragraphStyles = {
   fontWeight: "500",
@@ -103,7 +104,7 @@ const links = [
     url: "https://google.com",
     description:
       "I've never worked a job in my life, all i do is watch anime and play degen video games.",
-    color: "#f6e58d",
+    color: "#f7ff20",
   },
   {
     text: "About",
@@ -116,7 +117,8 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <div>
+    <div className="border-blue-500" style={{ height: "97vh" }}>
+      {/* <div class="h-64 bg-gradient-to-r from-teal-400  to-purple-800"></div> */}
       <title>Josh Portfolio</title>
       <img
         style={imgDim}
@@ -159,7 +161,7 @@ const IndexPage = () => {
           </span>
         </p>
         <ul style={listStyles}>
-          <li style={docLinkStyle}>
+          <li style={{ ...listItemStyles }}>
             <a style={linkStyle} href={`${docLink.url}`}>
               {docLink.text}
             </a>

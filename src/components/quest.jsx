@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Minigame from "./minigame";
 
 function Quest(props) {
   const [isQuestClicked, setIsQuestClicked] = useState(false);
@@ -50,6 +51,7 @@ function Quest(props) {
             width="106"
             className="quest-button2"
           />
+          {isAccepted ? <Minigame /> : null}
         </div>
       )}
     </>
