@@ -25,7 +25,7 @@ function Quest(props) {
         />
         {isQuestClicked ? null : (
           <p className="click-me float-right">Click me!</p>
-        )}
+        )} 
       </div>
       {isQuestClicked && (
         <div>
