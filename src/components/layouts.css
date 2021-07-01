@@ -110,3 +110,12 @@ a:hover {
   filter: alpha(opacity=70) !important; /* For IE8 and earlier */
   box-shadow: 0 0 0px #000000 !important;
 }
+
+.click-me {
+  font-family: "Courier New", Courier, monospace;
+  color: #f7ff20;
+  position: absolute;
+  top: 32rem;
+  right: 34rem;
+  padding-right: 2px;
+}

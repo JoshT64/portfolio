@@ -23,6 +23,9 @@ function Quest(props) {
           className="quest-icon float-right mr-8 animate-bounce transition duration-75 hover:opacity-80"
           src="https://i.imgur.com/3hh3sBU.png"
         />
+        {isQuestClicked ? null : (
+          <p className="click-me float-right">Click me!</p>
+        )}
       </div>
       {isQuestClicked && (
         <div>
@@ -34,7 +37,6 @@ function Quest(props) {
           <img //Accept button
             onClick={() => {
               setIsAccepted(true);
-              console.log("Youre gay");
             }}
             width="106"
             src="https://i.imgur.com/XDSXKLc.png"
